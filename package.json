@@ -1,7 +1,7 @@
 {
-  "name": "eslint-config-kentcdodds",
+  "name": "eslint-config",
   "version": "0.0.0-semantically-released",
-  "description": "ESLint rules according to kentcdodds' personal preference",
+  "description": "ESLint rules according to nathanvale's personal preference",
   "main": "index.js",
   "scripts": {
     "commit": "git-cz",
@@ -18,22 +18,22 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/kentcdodds/eslint-config-kentcdodds.git"
+    "url": "https://github.com/nathanvale/eslint-config.git"
   },
   "keywords": [
     "eslint",
     "eslintconfig",
     "config",
-    "kentcdodds",
+    "nathanvale",
     "javascript",
     "styleguide"
   ],
-  "author": "Kent C. Dodds <kent@doddsfamily.us> (http://kentcdodds.com/)",
+  "author": "Nathan Vale <hi@nathanvale.com> (http://nathanvale.com/)",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/kentcdodds/eslint-config-kentcdodds/issues"
+    "url": "https://github.com/nahtanvale/eslint-config-nahtanvale/issues"
   },
-  "homepage": "https://github.com/kentcdodds/eslint-config-kentcdodds#readme",
+  "homepage": "https://github.com/nahtanvale/eslint-config-nahtanvale#readme",
   "dependencies": {
     "babel-eslint": "^9.0.0",
     "eslint-config-prettier": "^3.6.0",
