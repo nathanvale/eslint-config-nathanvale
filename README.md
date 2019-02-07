@@ -1,9 +1,9 @@
-# eslint-config-kentcdodds
+# eslint-config
 
-[![travis build](https://img.shields.io/travis/kentcdodds/eslint-config-kentcdodds.svg?style=flat-square)](https://travis-ci.org/kentcdodds/eslint-config-kentcdodds)
-[![version](https://img.shields.io/npm/v/eslint-config-kentcdodds.svg?style=flat-square)](http://npm.im/eslint-config-kentcdodds)
-[![downloads](https://img.shields.io/npm/dm/eslint-config-kentcdodds.svg?style=flat-square)](http://npm-stat.com/charts.html?package=eslint-config-kentcdodds&from=2015-08-01)
-[![MIT License](https://img.shields.io/npm/l/eslint-config-kentcdodds.svg?style=flat-square)](http://opensource.org/licenses/MIT)
+[![travis build](https://img.shields.io/travis/eslint-config/eslint-config.svg?style=flat-square)](https://travis-ci.org/eslint-config/eslint-config)
+[![version](https://img.shields.io/npm/v/eslint-config.svg?style=flat-square)](http://npm.im/eslint-config)
+[![downloads](https://img.shields.io/npm/dm/eslint-config.svg?style=flat-square)](http://npm-stat.com/charts.html?package=eslint-config&from=2015-08-01)
+[![MIT License](https://img.shields.io/npm/l/eslint-config.svg?style=flat-square)](http://opensource.org/licenses/MIT)
 [![semantic-release](https://img.shields.io/badge/%20%20%F0%9F%93%A6%F0%9F%9A%80-semantic--release-e10079.svg?style=flat-square)](https://github.com/semantic-release/semantic-release)
 
 ESLint rules for all of my personal projects. Feel free to use these conventions :-)
@@ -13,14 +13,14 @@ ESLint rules for all of my personal projects. Feel free to use these conventions
 Install the conventions by running:
 
 ```
-npm install --save-dev eslint eslint-config-kentcdodds
+npm install --save-dev eslint eslint-config
 ```
 
 Then add the extends to your `.eslintrc`:
 
 ```javascript
 {
-  "extends": "kentcdodds",
+  "extends": "eslint-config",
   "rules": {
     // your overrides
   }
@@ -35,7 +35,7 @@ You can use them standalone:
 
 ```javascript
 {
-  "extends": "kentcdodds/<config-name>"
+  "extends": "eslint-config/<config-name>"
 }
 ```
 
@@ -43,7 +43,7 @@ Or in combination with the base config (recommended)
 
 ```javascript
 {
-  "extends": ["kentcdodds", "kentcdodds/<config-name>"]
+  "extends": ["eslint-config", "eslint-config/<config-name>"]
 }
 ```
 
@@ -52,7 +52,7 @@ installed to make things work. I recommend adding them as dependencies to your p
 if you're going to use the config for it.
 
 * `babel-module`: [babel-plugin-module-resolver](https://www.npmjs.com/package/babel-plugin-module-resolver) for the import plugin to work with the module-resolver babel plugin (_eslint-plugin-import_ and _eslint-import-resolver-babel-module_)
-* `babel-react-require`: [babel-plugin-react-require](https://www.npmjs.com/package/babel-plugin-react-require) for when you're using the react-require babel plugin (should be used with `"kentcdodds/react"` as well) (_eslint-plugin-react_)
+* `babel-react-require`: [babel-plugin-react-require](https://www.npmjs.com/package/babel-plugin-react-require) for when you're using the react-require babel plugin (should be used with `"eslint-config/react"` as well) (_eslint-plugin-react_)
 * `jest`: [jest](http://facebook.github.io/jest/) testing framework
 * `jsx-a11y`: [eslint-plugin-jsx-a11y](https://github.com/evcohen/eslint-plugin-jsx-a11y) for rules regarding accessibility with JSX (_eslint-plugin-jsx-a11y_)
 * `react`: [React](https://www.npmjs.com/package/react) JS library (_eslint-plugin-react_)
@@ -69,9 +69,9 @@ if you're going to use the config for it.
 ```javascript
 {
   "extends": [
-    "kentcdodds/possible-errors", "kentcdodds/best-practices",
-    "kentcdodds/es6/possible-errors", "kentcdodds/import",
-    "kentcdodds/jest"
+    "eslint-config/possible-errors", "eslint-config/best-practices",
+    "eslint-config/es6/possible-errors", "eslint-config/import",
+    "eslint-config/jest"
   ],
   "rules": { /* custom rules */ }
 }
