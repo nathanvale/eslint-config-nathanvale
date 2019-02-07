@@ -36,7 +36,6 @@ jobs:
           at: ~/repo
       - checkout
       - run: npx -p semantic-release@7 -c "semantic-release pre && npm publish && semantic-release post"
-# TODO: add only master check
 workflows:
   version: 2
   test_and_release:
