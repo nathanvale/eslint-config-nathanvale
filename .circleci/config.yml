@@ -35,7 +35,7 @@ jobs:
       - attach_workspace:
           at: ~/repo
       - checkout
-      - run: npx -p semantic-release@7 -c "semantic-release pre && npm publish && semantic-release post"
+      - run: npx semantic-release
 workflows:
   version: 2
   test_and_release:
