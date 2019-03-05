@@ -23,7 +23,7 @@
   "author": "Nathan Vale <hi@nathanvale.com> (http://nathanvale.com/)",
   "main": "index.js",
   "scripts": {
-    "precommit": "npm run validate",
+    "precommit": "yarn; npm run validate",
     "commit": "git-cz",
     "find-new-rules": "npm-run-all --parallel find-new-rules:*",
     "find-new-rules:jest": "eslint-find-rules --unused ./other/test/jest.js",
