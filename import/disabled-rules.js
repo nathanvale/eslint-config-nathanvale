@@ -13,4 +13,12 @@ module.exports = {
     'import/unambiguous': 'off', // not sure I understand this rule well enough right now...
     'import/no-relative-parent-imports': 'off',
   },
+  overrides: [
+    {
+      files: ['*.ts', '*.tsx'],
+      rules: {
+        'import/no-default-export': 'error',
+      },
+    },
+  ],
 }
