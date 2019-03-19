@@ -12,6 +12,7 @@ module.exports = {
   rules: {
     // we use prettier instead
     '@typescript-eslint/indent': 'off',
+    '@typescript-eslint/explicit-member-accessibility': 'off',
   },
   overrides: [
     {
