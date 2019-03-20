@@ -13,10 +13,13 @@ module.exports = {
     // we use prettier instead
     '@typescript-eslint/indent': 'off',
     '@typescript-eslint/explicit-member-accessibility': 'off',
-    '@typescript-eslint/no-use-before-define': {
-      functions: false,
-      classes: true,
-    },
+    '@typescript-eslint/no-use-before-define': [
+      'error',
+      {
+        functions: true,
+        classes: true,
+      },
+    ],
   },
   overrides: [
     {
