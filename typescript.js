@@ -20,6 +20,7 @@ module.exports = {
         classes: true,
       },
     ],
+    '@typescript-eslint/member-delimiter-style': 'off',
   },
   overrides: [
     {
