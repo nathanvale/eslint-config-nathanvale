@@ -32,7 +32,7 @@ module.exports = {
       jsx: true,
     },
   },
-  plugins: ['react'],
+  plugins: ['react', 'react-hooks'],
   settings: {
     react: {
       version: oldestSupportedReactVersion,
@@ -54,6 +54,7 @@ module.exports = {
     'react/jsx-no-duplicate-props': 'error',
     'react/jsx-no-literals': 'off',
     'react/jsx-no-target-blank': 'error',
+    'react/jsx-props-no-spreading': 'off',
     'react/jsx-no-undef': 'error',
     'react/jsx-pascal-case': 'error',
     'react/jsx-sort-props': 'off',
@@ -79,6 +80,7 @@ module.exports = {
     'react/no-will-update-set-state': 'error',
     'react/prefer-es6-class': 'off',
     'react/prefer-stateless-function': 'off',
+    'react/prefer-read-only-props': 'off',
     'react/prop-types': 'error',
     'react/react-in-jsx-scope': 'error',
     'react/require-default-props': 'off', // sometimes the default value is undefined so that's fine...
@@ -88,6 +90,8 @@ module.exports = {
     'react/sort-comp': 'off',
     'react/sort-prop-types': 'off',
     'react/style-prop-object': 'error',
+    'react/state-in-constructor': 'off',
+    'react/static-property-placement': 'off',
     'react/void-dom-elements-no-children': 'error',
     'react/default-props-match-prop-types': 'error',
     'react/jsx-child-element-spacing': 'warn',
@@ -109,5 +113,7 @@ module.exports = {
     'react/jsx-max-depth': 'off',
     'react/jsx-props-no-multi-spaces': 'off',
     'react/jsx-sort-default-props': 'off',
+    'react-hooks/exhaustive-deps': 'warn',
+    'react-hooks/rules-of-hooks': 'error',
   },
 }
