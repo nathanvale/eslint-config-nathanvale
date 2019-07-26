@@ -8,19 +8,21 @@ module.exports = {
     },
   },
   plugins: ['@typescript-eslint'],
-  extends: ['plugin:@typescript-eslint/recommended'],
+  extends: [
+    'plugin:@typescript-eslint/recommended',
+    'prettier',
+    'prettier/@typescript-eslint',
+  ],
   rules: {
-    // we use prettier instead
-    '@typescript-eslint/indent': 'off',
+    '@typescript-eslint/interface-name-prefix': ['error', 'always'],
     '@typescript-eslint/explicit-member-accessibility': 'off',
-    '@typescript-eslint/no-use-before-define': [
+    '@typescript-eslint/explicit-function-return-type': [
       'error',
       {
-        functions: false,
-        classes: true,
+        allowExpressions: true,
+        allowTypedFunctionExpressions: true,
       },
     ],
-    '@typescript-eslint/member-delimiter-style': 'off',
   },
   overrides: [
     {
